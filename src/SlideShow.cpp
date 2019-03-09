@@ -64,7 +64,7 @@ bool SlideShow::init() {
         * et d'initialiser par conséquent l'objet courant.
         */
         std::string line ="";
-        while(std::getline(_filestream, line)){
+        while(getline(_filestream, line)){
             _nbFilelines += 1;
         }
 
@@ -72,6 +72,7 @@ bool SlideShow::init() {
         cerr << "Erreur: impossible d'ouvrir le fichier." << endl;
         return false;
     }
+    _isInitialised = true;
     
     return true;
 }
@@ -122,7 +123,7 @@ const std::uint8_t SlideShow::displayRandomSlide(std::ostream* out) {
     * le contenu d'une ligne du fichier
     * correspondant au nombre aléatoire obtenu
     */
-    
+
     *out << "completez le code ... et enlevez ceci!" << endl;
     
     return rc;
