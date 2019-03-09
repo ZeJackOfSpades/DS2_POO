@@ -34,5 +34,5 @@ matrix:
 
 
 script:
-  - make clean
+  - make cleaner
   - make
