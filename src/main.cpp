@@ -20,7 +20,13 @@
 #include <iostream>
 
 using namespace std;
-
+/** 3A) Il nous affiche la commande a executer pour run le main avec le fichier :
+*	$ make run
+*	./slide-show data/selection.txt
+*
+*
+*
+*/
 int main(int argc, char **argv) {
     /*
     * TODO: Complétez le code ici ...
